@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy SMM Panel - Professional & Reliable</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* Custom styles for a professional dark blue theme */
+        body {
+            font-family: 'Poppins', sans-serif;
+            /* Using a deep slate blue for a modern, professional background */
+            background-color: #0f172a; /* slate-900 */
+            color: #94a3b8; /* slate-400 */
+        }
+        .hero-gradient-text {
+            /* A brighter, more vibrant gradient that pops on a dark background */
+            background: linear-gradient(90deg, #38bdf8, #60a5fa); /* sky-400 to blue-400 */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        .feature-card, .faq-item, .contact-card {
+            /* Cards are a slightly lighter shade of the background for subtle contrast */
+            background-color: #1e293b; /* slate-800 */
+            border: 1px solid #334155; /* slate-700 */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            /* A subtle glow effect on hover using a brighter blue */
+            box-shadow: 0 10px 20px rgba(59, 130, 246, 0.15);
+        }
+        .form-input {
+            background-color: #334155; /* slate-700 */
+            border: 1px solid #475569; /* slate-600 */
+            color: #f1f5f9; /* slate-100 */
+        }
+        .form-input::placeholder {
+            color: #64748b; /* slate-500 */
+        }
+        .form-input:focus {
+            --tw-ring-color: #3b82f6; /* blue-500 */
+            border-color: #3b82f6; /* blue-500 */
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50 border-b border-slate-800">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold hero-gradient-text">EasySMM</a>
+            <div class="hidden md:flex items-center space-x-8">
+                <a href="#services" class="text-slate-300 hover:text-blue-400 transition">Services</a>
+                <a href="#why-us" class="text-slate-300 hover:text-blue-400 transition">Why Us</a>
+                <a href="#faq" class="text-slate-300 hover:text-blue-400 transition">FAQ</a>
+                <a href="#contact" class="text-slate-300 hover:text-blue-400 transition">Contact</a>
+                <!-- Button color updated for better contrast on dark background -->
+                <a href="https://forms.fillout.com/t/1nMZgpuB43us" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-5 py-2 rounded-lg transition">Get Started</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-slate-300">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-800 border-t border-slate-700">
+            <a href="#services" class="block py-3 px-6 text-slate-300 hover:bg-slate-700">Services</a>
+            <a href="#why-us" class="block py-3 px-6 text-slate-300 hover:bg-slate-700">Why Us</a>
+            <a href="#faq" class="block py-3 px-6 text-slate-300 hover:bg-slate-700">FAQ</a>
+            <a href="#contact" class="block py-3 px-6 text-slate-300 hover:bg-slate-700">Contact</a>
+            <a href="https://forms.fillout.com/t/1nMZgpuB43us" target="_blank" class="block py-3 px-6 text-blue-400 font-semibold">Get Started</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="py-20 md:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-slate-100 max-w-4xl mx-auto">
+                    The World's <span class="hero-gradient-text">#1 SMM Panel</span> For Resellers
+                </h1>
+                <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto mb-10">
+                    We provide the cheapest and fastest SMM services for all social media platforms. Boost your online presence with just a few clicks.
+                </p>
+                <a href="https://forms.fillout.com/t/1nMZgpuB43us" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 px-10 rounded-lg text-lg transition-transform transform hover:scale-105">
+                    Get Started Now
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 bg-slate-900/50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold hero-gradient-text">Our Awesome Services</h2>
+                    <p class="text-slate-400 mt-2">High-quality services to supercharge your social media.</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Cards with updated icon colors and text -->
+                    <div class="feature-card rounded-xl p-8 text-center">
+                        <div class="text-5xl text-blue-500 mb-4"><i class="fab fa-instagram"></i></div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-100">Instagram Growth</h3>
+                        <p class="text-slate-400">Get real followers, likes, and views to grow your Instagram profile organically and quickly.</p>
+                    </div>
+                    <div class="feature-card rounded-xl p-8 text-center">
+                        <div class="text-5xl text-blue-500 mb-4"><i class="fab fa-youtube"></i></div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-100">YouTube Engagement</h3>
+                        <p class="text-slate-400">Increase your subscribers, views, and watch time to monetize your channel faster.</p>
+                    </div>
+                    <div class="feature-card rounded-xl p-8 text-center">
+                        <div class="text-5xl text-blue-500 mb-4"><i class="fab fa-tiktok"></i></div>
+                        <h3 class="text-xl font-bold mb-2 text-slate-100">TikTok Viral</h3>
+                        <p class="text-slate-400">Go viral on TikTok with our premium views, likes, and followers services.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-us" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold hero-gradient-text">Why Choose EasySMM?</h2>
+                    <p class="text-slate-400 mt-2">We are dedicated to providing the best experience for our clients.</p>
+                </div>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center p-6">
+                        <div class="text-4xl text-blue-500 mb-3"><i class="fas fa-bolt"></i></div>
+                        <h3 class="text-lg font-semibold text-slate-100">Instant Delivery</h3>
+                        <p class="text-slate-400 text-sm">Our services start delivering within seconds of your order.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="text-4xl text-blue-500 mb-3"><i class="fas fa-headset"></i></div>
+                        <h3 class="text-lg font-semibold text-slate-100">24/7 Support</h3>
+                        <p class="text-slate-400 text-sm">Our support team is available around the clock to assist you.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="text-4xl text-blue-500 mb-3"><i class="fas fa-shield-alt"></i></div>
+                        <h3 class="text-lg font-semibold text-slate-100">Secure Payments</h3>
+                        <p class="text-slate-400 text-sm">We offer a variety of secure payment methods for your convenience.</p>
+                    </div>
+                    <div class="text-center p-6">
+                        <div class="text-4xl text-blue-500 mb-3"><i class="fas fa-tags"></i></div>
+                        <h3 class="text-lg font-semibold text-slate-100">Affordable Prices</h3>
+                        <p class="text-slate-400 text-sm">We provide the most competitive prices in the market for resellers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 bg-slate-900/50">
+            <div class="container mx-auto px-6 max-w-3xl">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold hero-gradient-text">Frequently Asked Questions</h2>
+                    <p class="text-slate-400 mt-2">Have questions? We have answers.</p>
+                </div>
+                <div class="space-y-4">
+                    <!-- FAQ Items -->
+                    <div class="faq-item rounded-lg">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-slate-100">
+                            <span>What is an SMM Panel?</span>
+                            <i class="fas fa-chevron-down transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden p-5 pt-0 text-slate-400">
+                            An SMM Panel is an online shop where you can buy various Social Media Marketing services like followers, likes, views, etc.
+                        </div>
+                    </div>
+                    <div class="faq-item rounded-lg">
+                        <button class="faq-question w-full flex justify-between items-center text-left p-5 font-semibold text-slate-100">
+                            <span>Are these services safe to use?</span>
+                            <i class="fas fa-chevron-down transition-transform"></i>
+                        </button>
+                        <div class="faq-answer hidden p-5 pt-0 text-slate-400">
+                            Absolutely! Our services are 100% safe and will not get your account banned. We use secure methods to deliver all services.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6">
+                <div class="max-w-2xl mx-auto contact-card rounded-xl shadow-lg overflow-hidden">
+                    <div class="p-8 sm:p-10">
+                        <div class="text-center mb-8">
+                            <h2 class="text-3xl sm:text-4xl font-bold hero-gradient-text">Get In Touch</h2>
+                            <p class="mt-2 text-slate-400">Please fill out the form below to contact us.</p>
+                        </div>
+                        <form action="#" method="POST">
+                            <div class="space-y-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-slate-300">Name</label>
+                                    <div class="mt-1">
+                                        <input type="text" name="name" id="name" autocomplete="name" class="py-3 px-4 block w-full shadow-sm rounded-md transition duration-150 ease-in-out form-input" placeholder="Enter your full name">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-slate-300">Email</label>
+                                    <div class="mt-1">
+                                        <input type="email" name="email" id="email" autocomplete="email" class="py-3 px-4 block w-full shadow-sm rounded-md transition duration-150 ease-in-out form-input" placeholder="you@example.com">
+                                    </div>
+                                </div>
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-slate-300">Message</label>
+                                    <div class="mt-1">
+                                       <textarea id="message" name="message" rows="4" class="py-3 px-4 block w-full shadow-sm rounded-md transition form-input" placeholder="Your message..."></textarea>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition duration-300">
+                                        Send Message
+                                    </button>
+                                 </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-800 py-12">
+        <div class="container mx-auto px-6 text-center text-slate-500">
+            <p>&copy; 2024 EasySMM. All Rights Reserved.</p>
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- Mobile Menu Toggle ---
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // --- FAQ Accordion ---
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                // Close other open FAQs for a cleaner accordion experience
+                faqQuestions.forEach(otherQuestion => {
+                    if (otherQuestion !== question) {
+                        otherQuestion.nextElementSibling.classList.add('hidden');
+                        otherQuestion.querySelector('i').classList.remove('rotate-180');
+                    }
+                });
+                
+                // Toggle current FAQ
+                answer.classList.toggle('hidden');
+                icon.classList.toggle('rotate-180');
+            });
+        });
+
+    </script>
+
+</body>
+</html>
+
